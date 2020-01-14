@@ -75,8 +75,40 @@ nav{
 .menu .logo a{
     padding-right: 44px;
 }
-
-@media screen and (max-width: 1200px){
+.intro{
+    color: #fff;
+    height: 100%;
+    padding-top: 75px;
+    padding-left: 13%;
+}
+.intro .intro-text{
+    font-size: 85px;
+    font-family: 'OpenSans-Bold';
+}
+.intro .intro-subtext{
+    font-size: 27px;
+}
+.intro .button{
+    color: #fff;
+    font-size: 18px;
+    background: #00501f;
+    text-decoration: none;
+    align-self: center;
+    padding: 13px 50px;
+    transition: all .2s linear;
+}
+.intro a{
+    display: block;
+    margin-top: 75px;
+    width:200px;
+    text-align: center;
+}
+.intro .button:hover{
+    background: none;
+    color:#00501f;
+    border:1px #00501f solid;
+}
+@media screen and (max-width: 1280px){
     .toggle{
         clear: both;
         display: block;
