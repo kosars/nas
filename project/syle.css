@@ -85,9 +85,9 @@ textarea::placeholder{
     margin-left: 44px;
 }
 .menu .help a:hover{
-    background: none;
+    background-color: #fff;
     color:#00501f;
-    border:1px #00501f solid;
+    border:2px #00501f solid;
 }
 .menu .logo a{
     padding-right: 44px;
@@ -121,9 +121,9 @@ textarea::placeholder{
     text-align: center;
 }
 .intro .button:hover{
-    background: none;
+    background-color: #fff;
     color:#00501f;
-    border:1px #00501f solid;
+    border:2px #00501f solid;
 }
 .margin-top{
     margin-top: 140px;
@@ -206,12 +206,13 @@ main section .button{
     display: block;
     text-align: center;
     transition: all .2s linear;
+    border: none;
     
 }
 main section .button:hover{
-    background: none;
+    background-color: #fff;
     color:#00501f;
-    border:1px #00501f solid;
+    border:2px #00501f solid;
 }
 main section .centered{
     max-width: 1000px;
@@ -281,7 +282,7 @@ main section .news-links{
 
 main section .monuments-block{
     width: 100%;
-    height: 730px;
+    height: 720px;
     margin: 50px 0px;
     background-image: url(img/pamyatniki-background.jpg);
 }
@@ -463,6 +464,17 @@ footer .footer-social a:hover{
 }
 
 @media screen and (max-width: 1024px){
+    header{
+        background: none;
+        height: auto;
+    }
+    header section{
+        background-image: url(img/header-background.jpg);
+        padding-bottom: 100px;
+    }
+    header nav{
+        background-image: url(img/header-background.jpg);
+    }
     .toggle{
         clear: both;
         display: block;
@@ -528,5 +540,14 @@ footer .footer-social a:hover{
         border:none;
         border-bottom: 5px #00501f solid; 
         color:#fff;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    header{
+        background-size: 100%
+    }
+    main section .monuments-block{
+        background-size: 100%
     }
 }
