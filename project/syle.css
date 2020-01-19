@@ -1,22 +1,8 @@
-@import "fonts.css" screen;
-@import "mobile.css";
-*{
-    padding: 0;
-    margin: 0;
-    font-family:'OpenSans-Regular';
-}
-body,html{
-    overflow-x: hidden;
-}
+@import "uikit.css" screen;
+
 header{
-    width: 100%;
     height: 786px;
     background-image: url(img/header-background.jpg);
-}
-nav{
-    margin: 0 auto;
-    max-width:1280px;
-    width: 100%;
 }
 input, textarea{
     display: block;
@@ -34,63 +20,6 @@ input, textarea{
 }
 textarea::placeholder{
     vertical-align: bottom;
-}
-#checkbox-menu,
-.toggle{
-    display: none;
-}
-.menu{
-    padding: 0;
-    margin: 0;
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-}
-.menu li a{
-    color:#fff;
-    font-size: 18px;
-    text-decoration: none;
-    align-self: center;
-    transition: all .2s linear;
-}
-.menu .nav-link a{
-    font-family: 'OpenSans-Bold';
-    padding: 10px 22px;
-}
-.menu .nav-link a:hover{
-    border-bottom: 5px #00501f solid; 
-}
-.menu .lang-active a{
-    font-family: 'OpenSans-Regular';
-    background: #00501f;
-    border-radius: 30px;
-    padding: 3px 17px;
-}
-.menu .lang-unactive a{
-    font-family: 'OpenSans-Regular';
-    border-radius: 30px;
-    padding: 3px 17px;
-}
-.menu .lang-unactive a:hover{
-    font-family: 'OpenSans-Regular';
-    background: #cfcfcf;
-}
-.menu .help a{
-    background: #00501f;
-    font-family: 'OpenSans-Regular';
-    padding: 13px 50px;
-    margin-left: 44px;
-}
-.menu .help a:hover{
-    background-color: #fff;
-    color:#00501f;
-    border:2px #00501f solid;
-}
-.menu .logo a{
-    padding-right: 44px;
 }
 .intro{
     color: #fff;
@@ -125,15 +54,6 @@ textarea::placeholder{
     color:#00501f;
     border:2px #00501f solid;
 }
-.margin-top{
-    margin-top: 140px;
-}
-.no-padding{
-    padding-bottom: 0px;
-}
-main section{
-    padding-bottom: 140px;
-}
 main section .icon{
     height: 70px;
     display: block;
@@ -153,78 +73,6 @@ main section .icon-7{
 }
 main section .icon-8{
     height: 70px;
-}
-main section h1{
-    display: block;
-    margin: 30px auto;
-    font-size: 44px;
-    font-family: 'OpenSans-Bold';
-    text-align: center;
-}
-main section h2{
-    margin: 20px auto;
-    font-size: 36px;
-    font-family: 'OpenSans-Bold';
-}
-main section h3{
-    margin: 14px auto;
-    font-size: 27px;
-    font-family: 'OpenSans-Bold';
-}
-main section h4{
-    font-size: 22px;
-    font-family: 'OpenSans-Regular';
-}
-main section h5{
-    font-size: 16px;
-    font-family: 'OpenSans-Bold';
-}
-main section p{
-    font-size: 18px;
-    font-family: 'OpenSans-Regular';
-}
-main section a{
-    color:#000;
-    font-size: 18px;
-    text-decoration: none;
-    align-self: center;
-    transition: all .2s linear;
-    border-bottom: 2px #00501f solid;
-}
-main section a:hover{
-    color:#00501f;
-}
-main section .button{
-    color: #fff;
-    background: #00501f;
-    font-family: 'OpenSans-Regular';
-    font-size: 18px;
-    width: 240px;
-    padding: 13px 0px;
-    text-decoration: none;
-    align-self: center;
-    display: block;
-    text-align: center;
-    transition: all .2s linear;
-    border: none;
-    
-}
-main section .button:hover{
-    background-color: #fff;
-    color:#00501f;
-    border:2px #00501f solid;
-}
-main section .centered{
-    max-width: 1000px;
-    text-align: center;
-    display: block;
-    margin: 0px auto;
-}
-main section .border-bottom{
-    width: 140px;
-    display: block;
-    margin: 30px auto;
-    border-bottom: 5px #00501f solid;
 }
 main section .double-block{
     max-width: 1280px;
@@ -279,7 +127,6 @@ main section .news-links{
     align-items: center;
     flex-wrap: wrap;
 }
-
 main section .monuments-block{
     width: 100%;
     height: 720px;
@@ -297,13 +144,6 @@ main section .monuments-block .content h2{
 }
 main section .monuments-block .content .button{
     margin-top: 65px;
-}
-main section .bottom-link{
-    margin: 0px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 main section .calendar{
     max-width: 1280px;
@@ -334,19 +174,6 @@ main section .calendar .block .description{
 }
 main section .calendar .block .join{
     margin-top: 54px;
-}
-main .green{
-    padding-top: 140px;
-    color: #fff;
-    background-color: #00501f;
-}
-main .green a{
-    color:#fff;
-    border-bottom: 2px #fff solid;
-}
-main .green a:hover{
-    color:#cfcfcf;
-    border-bottom: 2px #cfcfcf solid;
 }
 main section .family-block{
     max-width:1280px;
@@ -397,71 +224,7 @@ main section .questions-donate-block .donate{
     padding-left: 90px;
     background-image: url(img/donate.jpg);
 }
-footer{
-    width: 100%;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    background-color: #00501f;
-    color:#fff;
-}
-footer .footer-content{
-    max-width: 1280px;
-    margin: 0px auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-footer .footer-content .block{
-    max-width: 304px;
-}
-footer .footer-content .block h1{
-    font-size: 18.35px;
-    margin-top: 30px;
-    margin-bottom: 8px;
-}
-footer .footer-content .block p{
-    color: #cfcfcf;
-    margin-bottom: 14px;
-}
-footer .footer-content .block a{
-    display: block;
-    color: #fff;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    text-decoration: none;
-    align-self: center;
-    transition: all .2s linear;
-}
 
-}
-footer .footer-content .block a:hover{
-    border-bottom: 2px #fff solid;
-}
-
-footer .footer-social{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-footer .footer-social a{
-    display: block;
-    color: #fff;
-    border: none;
-    text-decoration: none;
-    align-self: center;
-    transition: all .2s linear;
-    margin: 0px 20px;
-}
-footer .footer-social a i{
-    font-size: 35px;
-    color: #fff;
-}
-footer .footer-social a:hover{
-    color: #cfcfcf;
-}
 
 @media screen and (max-width: 1024px){
     header{
