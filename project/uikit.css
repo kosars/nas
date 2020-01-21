@@ -20,6 +20,10 @@ nav {
 .toggle {
   display: none;
 }
+.wrapper{
+    max-width: 1280px;
+    margin: 0px auto;
+}
 .menu {
   padding: 0;
   margin: 0;
@@ -268,8 +272,78 @@ main section .bottom-link {
   margin: 0px auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+main section .double-container{
+
+}
+main section .double-container .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+main section .double-container .row .block{
+    width: 560px;
+}
+main section .double-container .row .block img{
+    max-width: 100%;
+}
+main section .double-container .row .block h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.comments{
+
+}
+.comments input,
+.comments textarea{
+    display: block;
+    width: 100%;
+    border: 1px #000 solid;
+    font-size: 20px;
+    margin-top: 18px;
+    padding: 12px 14px;
+    font-family:'OpenSans-Regular';
+    outline: none;
+    -moz-appearance: none;
+    resize: none;
+}
+.comments textarea::placeholder{
+}
+.comments h1{
+    text-align: left;
+    margin-bottom: 40px;
+}
+.comments .button{
+    margin-top: 12px;
+    max-width: 316px;
+    border: none;
+}
+.comments .button:hover{
+    border: 1px #00501f solid;
+}
+.comments-container{
+    margin-left: 85px;
+}
+.comment{
+    margin: 25px 25px;
+}
+.comment-name{
+    font-family: 'OpenSans-Bold';
+    margin-bottom: 8px;
+}
+.comment-text{
+    margin-bottom: 30px;
+}
+.comment-date{
+    color: #4b4f4d;
+}
+.comment-form-container{
+    margin-left: 110px;
+    max-width: 542px;
 }
 .slider-container {
     width: 100%;

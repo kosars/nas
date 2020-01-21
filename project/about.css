@@ -29,3 +29,8 @@ main .text-carousel{
 main .text-carousel p{
     padding: 18px 0px;
 }
+.icon-7{
+    height: 80px;
+    display: block;
+    margin: 0px auto;
+}
