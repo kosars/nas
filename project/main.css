@@ -225,9 +225,8 @@ main section .questions-donate-block .donate{
     background-image: url(img/donate.jpg);
 }
 
-
 @media screen and (max-width: 1024px){
-    header{
+    /* header{
         background: none;
         height: auto;
     }
@@ -237,72 +236,14 @@ main section .questions-donate-block .donate{
     }
     header nav{
         background-image: url(img/header-background.jpg);
+    } */
+    header{
+        background-position: top 0px right -350px;
+        min-height: 640px;
+        height: auto;
     }
-    .toggle{
-        clear: both;
-        display: block;
-        text-align: center;
-        font-size: 18px;
-        line-height: 40px;
-        width: 100%;
-        color: #fff;
-        background: #00501f;
-        transition: all .2s linear;
-    }
-    .toggle:hover{ 
-        background: none;
-        color:#00501f;
-        background: #cfcfcf;
-        border:1px #00501f solid;
-    }
-    #checkbox-menu:checked + label .touch li{
-        opacity: 1;
-        visibility: visible;
-        transition: all .6s linear;
-    }
-    #checkbox-menu:checked + label .touch {
-        height: 450px;
-    }
-    .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 0px;
-        transition: height .3s linear;
-    }
-    .menu li{
-        display: flex;
-        align-self: center;
-        opacity: 0;
-        visibility: hidden;
-    }
-    .menu li a{
-        width: 95%;
-        text-align: center;
-        align-self: center;
-        align-content: center;
-    }
-    .menu .logo a{
-        padding: 0px;
-    }
-    .menu .lang-active a{
-        width: 60px;
-    }
-    .menu .lang-unactive a{
-        width: 60px;
-    }
-    .menu .help a{
-        font-family: 'OpenSans-Bold';
-        padding: 0 auto;
-        align-self: center;
-        background: none;
-        margin: 0px;
-    }
-    .menu .help a:hover{
-        border:none;
-        border-bottom: 5px #00501f solid; 
-        color:#fff;
+    header section{
+        padding-bottom: 100px;
     }
 }
 
