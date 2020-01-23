@@ -1,0 +1,6 @@
+@media screen and (max-width: 1024px) {
+    .news-navigation{
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
