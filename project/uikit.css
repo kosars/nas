@@ -295,6 +295,9 @@ main section .double-container .row .block h2{
     margin-top: 40px;
     margin-bottom: 40px;
 }
+.invert-color{
+  filter: invert(1);
+}
 .comments{
 
 }
@@ -644,26 +647,50 @@ main section .double-container .row .block h2{
   }
 }
 @media screen and (max-width: 1024px) {
-  .toggle {
+  .menu .toggle-wrapper{
+    width: 100%;
+    margin-bottom: 40px;
+    display: block;
+  }
+  .toggle{
     clear: both;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
     padding-top: 15px;
-    font-size: 60px;
-    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
     color: #fff;
     background: none;
     transition: all 0.2s linear;
+    
   }
   .toggle-dark {
     color: #000;
   }
-  .toggle img {
+  .toggle .toggle-logo {
     width: 150px;
-    margin-left: 15px;
+  }
+  .toggle .toggle-lang{
+    align-items: center;
+    align-content: center;
+    margin-left: 0;
+  }
+  .toggle .toggle-lang a {
+    font-size: 18px;
+    align-self: center;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+  }
+  .toggle .toggle-lang a:hover{
+    border-bottom:1px #fff solid;
   }
   .toggle .toggle-button {
-    margin-top: 2px;
+    width: 32px;
+    height: auto;
+    align-self: center;
     margin-right: 15px;
   }
   #checkbox-menu:checked + label .touch li {
@@ -672,9 +699,50 @@ main section .double-container .row .block h2{
     transition: all 0.6s linear;
   }
   #checkbox-menu:checked + label .touch {
-    /* height: 450px; с лого*/
-    height: 350px;
+    /* height: auto; */
+    height: 100%;
+    z-index:1;
   }
+  #checkbox-menu:checked + label .touch .toggle-lang a{
+    color: #000;
+  }
+  #checkbox-menu:checked + label .touch .nav-link a {
+    color: #4b4f4d;
+  }
+  #checkbox-menu:checked + label .touch .active {
+    color: #000;
+    border-bottom: 5px #00501f solid;
+  }
+  #checkbox-menu:checked + label .touch .lang a {
+    font-family: "OpenSans-Regular";
+    color: #00501f;
+    border-radius: 30px;
+    padding: 3px 17px;
+  }
+  #checkbox-menu:checked + label .touch .lang a:hover {
+    font-family: "OpenSans-Regular";
+    background: #cfcfcf;
+    color: #fff;
+  }
+  #checkbox-menu:checked + label .touch .lang .active {
+    font-family: "OpenSans-Regular";
+    color: #fff;
+    background: #00501f;
+    border-radius: 30px;
+    padding: 3px 17px;
+  }
+  #checkbox-menu:checked + label .touch .lang .active:hover {
+    font-family: "OpenSans-Regular";
+    background: #00501f;
+  }
+  #checkbox-menu:checked + label .touch .help .button {
+    color: #4b4f4d;
+  }
+  .wrapper{
+    max-width: 330px;
+    margin: 0 auto;
+  }
+  
   .menu {
     position: absolute;
     top: 0;
@@ -695,24 +763,20 @@ main section .double-container .row .block h2{
     text-align: left;
     opacity: 0;
     visibility: hidden;
+    justify-content: space-between;
   }
   .menu .nav-link a {
      padding: 12px 0px; 
   }
   .menu li a,
   .menu .help .button {
-    margin-left: 50px;
-    width: 95%;
-    text-align: left;
-    align-self: flex-start;
-    align-content: flex-start;
+    text-align: center;
+    align-self: center;
+    align-content:center;
   }
-  .menu .toggle{
-    height: 104px;
-    margin-bottom: 40px;
-  }
-  .menu .toggle img{
-    height: 89.93px;
+  .menu .nav-link,
+  .menu .help{
+    margin: 0 auto;
   }
   .menu .logo {
     display: none;

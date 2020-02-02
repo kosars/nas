@@ -123,7 +123,7 @@ main section .news-links{
     margin: 0px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -151,14 +151,10 @@ main section .calendar{
 }
 main section .calendar .block{
     padding: 35px 0px;
-    border-bottom: 1px #4b4f4d solid;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-main section .calendar .block:hover{
-    background-color: #f2f2ff;
 }
 main section .calendar .block .circle{
     width: 162px;
@@ -238,13 +234,23 @@ main section .questions-donate-block .donate{
         background-image: url(img/header-background.jpg);
     } */
     header{
-        background-position: top 0px right -350px;
-        min-height: 640px;
-        height: auto;
+        background-position: top -50px right -580px;
+        width: 100%;
     }
     header section{
         padding-bottom: 100px;
     }
+    .intro{
+        padding: 0;
+        margin-top: 100px;
+    }
+    .intro .intro-text{
+        font-size: 36px;
+    }
+    .intro .intro-subtext{
+        font-size: 18px;
+    }
+
 }
 
 @media screen and (min-width: 1440px){

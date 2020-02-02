@@ -12,22 +12,33 @@
 <body>
     <header>
         <nav>
-            <input type="checkbox" id="checkbox-menu">
+            <input type="checkbox" id="checkbox-menu" />
             <label for="checkbox-menu">
-                <span class="toggle">
-                    <img src="img/logo.png" alt="НАШ">
-                    <span class="toggle-button">☰</span>
-                    <span class="toggle-button">Х</span>
-                </span>
-                <ul class="menu touch">
-                    <li class="logo"><a href=""><img src="img/logo.png" alt="НАШ"></a></li>
-                    <li class="nav-link"><a href="">ШКОЛА</a></li>
-                    <li class="nav-link"><a href="">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
-                    <li class="nav-link"><a href="">КАЛЕНДАРЬ</a></li>
-                    <li class="nav-link"><a href="">КОНТАКТЫ</a></li>
-                    <li class="lang"><a href="" class="active">RU</a><a href="">EN</a></li>
-                    <li class="help"><a href="" class="button">ПОМОЧЬ</a></li>
-                </ul>
+                
+              <ul class="menu touch">
+                <li class="toggle-wrapper">
+                    <div class="toggle touch">
+                        <img src="img/logo-dark.png" alt="НАШ" class="toggle-logo"/>
+                        <span class="toggle-lang"><a href="">EN</a></span>
+                        <img src="img/menu.png" alt="" class="toggle-button invert-color">
+                    </div>
+                </li>
+                <li class="logo">
+                  <a href=""><img src="img/logo.png" alt="НАШ"/></a>
+                </li>
+                <li class="nav-link"><a href="">ШКОЛА</a></li>
+                <li class="nav-link"><a href="">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
+                <li class="nav-link"><a href="">КАЛЕНДАРЬ</a></li>
+                <li class="nav-link"><a href="">КОНТАКТЫ</a></li>
+                <li class="lang"><a href="" class="active">RU</a></li>
+                <li class="lang"><a href="">EN</a></li>
+                <li class="help"><a href="" class="button">ПОМОЧЬ</a></li>
+              </ul>
+              <span class="toggle">
+                <img src="img/logo.png" alt="НАШ" class="toggle-logo"/>
+                <span class="toggle-lang"><a href="">EN</a></span>
+                <img src="img/menu.png" alt="" class="toggle-button">
+              </span>
             </label>
         </nav>
         <section class="intro wrapper">
@@ -75,38 +86,100 @@
         <section>
             <img class="icon icon-4" src="img/icon-4.png" alt="icon">
             <h1>НАШИ НОВОСТИ</h1>
-            <div class="news-block">
-                <div class="block">
-                    <img src="img/photo-2.jpg" alt="photo" class="icon">
-                    <h5>11 сентября 2001</h5>
-                    <h3>Археология для души</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nisi praesentium voluptatem eaque perferendis adipisci,
-                         sequi quas sit fugit nemo! Commodi, tempora quam. Quos, 
-                         omnis fugiat? Numquam, sequi. Velit, tenetur temporibus.</p>
+            <div class="news-container">
+                <div class="news-card">
+                    <div class="news-pic">
+                        <img src="img/photo-1.jpg" alt="">
+                    </div>
+                    <div class="news-text">
+                        <h5>11 сентября 2001</h5>
+                        <h3>Археология для души</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            praesentium voluptatem eaque perferendis adipisci, sequi quas sit
+                            fugit nemo!
+                        </p>
+                        <a href="" class="button"> <i class="fas fa-chevron-right"></i> Читать полностью</a>
+                    </div>
                 </div>
-                <div class="block">
-                    <img src="img/photo-2.jpg" alt="photo" class="icon">
-                    <h5>11 сентября 2001</h5>
-                    <h3>Археология для души</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nisi praesentium voluptatem eaque perferendis adipisci,
-                         sequi quas sit fugit nemo! Commodi, tempora quam. Quos, 
-                         omnis fugiat? Numquam, sequi. Velit, tenetur temporibus.</p>
+                <div class="news-card">
+                    <div class="news-pic">
+                        <img src="img/photo-2.jpg" alt="">
+                    </div>
+                    <div class="news-text">
+                        <h5>11 сентября 2001</h5>
+                        <h3>Археология для души</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            praesentium voluptatem eaque perferendis adipisci, sequi quas sit
+                            fugit nemo!
+                        </p>
+                        <a href="" class="button"> <i class="fas fa-chevron-right"></i> Читать полностью</a>
+                    </div>
                 </div>
-                <div class="block">
-                    <img src="img/photo-2.jpg" alt="photo" class="icon">
-                    <h5>11 сентября 2001</h5>
-                    <h3>Археология для души</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nisi praesentium voluptatem eaque perferendis adipisci,
-                         sequi quas sit fugit nemo! Commodi, tempora quam. Quos, 
-                         omnis fugiat? Numquam, sequi. Velit, tenetur temporibus.</p>
+                <div class="news-card">
+                    <div class="news-pic">
+                        <img src="img/inst-3.jpg" alt="">
+                    </div>
+                    <div class="news-text">
+                        <h5>11 сентября 2001</h5>
+                        <h3>Археология для души</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            praesentium voluptatem eaque perferendis adipisci, sequi quas sit
+                            fugit nemo!
+                        </p>
+                        <a href="" class="button"> <i class="fas fa-chevron-right"></i> Читать полностью</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-pic">
+                        <img src="img/inst-3.jpg" alt="">
+                    </div>
+                    <div class="news-text">
+                        <h5>11 сентября 2001</h5>
+                        <h3>Археология для души</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            praesentium voluptatem eaque perferendis adipisci, sequi quas sit
+                            fugit nemo!
+                        </p>
+                        <a href="" class="button"> <i class="fas fa-chevron-right"></i> Читать полностью</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-pic">
+                        <img src="img/inst-3.jpg" alt="">
+                    </div>
+                    <div class="news-text">
+                        <h5>11 сентября 2001</h5>
+                        <h3>Археология для души</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            praesentium voluptatem eaque perferendis adipisci, sequi quas sit
+                            fugit nemo!
+                        </p>
+                        <a href="" class="button"> <i class="fas fa-chevron-right"></i> Читать полностью</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-pic">
+                        <img src="img/inst-3.jpg" alt="">
+                    </div>
+                    <div class="news-text">
+                        <h5>11 сентября 2001</h5>
+                        <h3>Археология для души</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                            praesentium voluptatem eaque perferendis adipisci, sequi quas sit
+                            fugit nemo!
+                        </p>
+                        <a href="" class="button"> <i class="fas fa-chevron-right"></i> Читать полностью</a>
+                    </div>
                 </div>
             </div>
             <div class="news-links">
                 <a href="" class="first">БОЛЬШЕ НОВОСТЕЙ</a>
-                <a href="" class="second">ВСЕ ПУБЛИКАЦИИ </a>
             </div>
             
         </section>
@@ -117,12 +190,15 @@
             <p class="centered">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae, numquam quis molestiae, sit magni nobis deserunt quae, illo exercitationem nihil temporibus iusto. Voluptatem, quas quo exercitationem dolores nisi quia.</p>
             <div class="border-bottom"></div>
             <div class="monuments-block">
-                <div class="content">
-                    <h5>Запорожская область</h5>
-                    <h2>Каменная могила</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad praesentium atque facere! Modi deserunt voluptates dolor hic nesciunt dolorum ducimus sapiente, rem, praesentium porro id fuga veniam culpa consequatur odit!</p>
-                    <a class="button">ПОСМОТРЕТЬ</a>                
+                <div class="wrapper">
+                    <div class="content">
+                        <h5>Запорожская область</h5>
+                        <h2>Каменная могила</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad praesentium atque facere! Modi deserunt voluptates dolor hic nesciunt dolorum ducimus sapiente, rem, praesentium porro id fuga veniam culpa consequatur odit!</p>
+                        <a class="button">ПОСМОТРЕТЬ</a>                
+                    </div>
                 </div>
+                
             </div>
             <div class="bottom-link">
                 <a href="">ДРУГИЕ ПАМЯТНИКИ</a>
