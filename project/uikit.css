@@ -24,6 +24,10 @@ nav {
     max-width: 1280px;
     margin: 0px auto;
 }
+.mobile{
+  visibility: hidden;
+  display: none;
+}
 .menu {
   padding: 0;
   margin: 0;
@@ -515,7 +519,6 @@ main section .double-container .row .block h2{
 .slider-container img {
   width: 100%;
 }
-.slide{}
 .instagram-text{
   display: flex;
   flex-wrap: wrap;
@@ -622,6 +625,32 @@ main section .double-container .row .block h2{
     animation-name: fade;
     animation-duration: 1s;
 }
+.calendar{
+  max-width: 1280px;
+  margin: 0px auto 75px auto;
+}
+.calendar .block{
+  padding: 35px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.calendar .block .circle{
+  width: 162px;
+  height: 162px;
+  border-radius:50%;
+}
+.calendar .block .date{
+  margin-top: 40px;
+}
+.calendar .block .description{
+  width:400px;
+  margin-top: 26px;
+}
+.calendar .block .join{
+  margin-top: 54px;
+}
 @-webkit-keyframes fade{
     from{opacity: .4;}
     to{opacity: 1;}
@@ -651,6 +680,10 @@ main section .double-container .row .block h2{
     width: 100%;
     margin-bottom: 40px;
     display: block;
+  }
+  .mobile{
+    visibility: visible;
+    display: flex;
   }
   .toggle{
     clear: both;
@@ -787,7 +820,6 @@ main section .double-container .row .block h2{
   .menu .lang{
     display: none;
   }
-  
   .menu .help .button {
     font-family: "OpenSans-Bold";
     background: none;
@@ -803,5 +835,102 @@ main section .double-container .row .block h2{
   }
   .footer-content .logo{
     display: none;
+  }
+  main section h1{
+    font-size: 26px;
+    margin: 20px 0px;
+  }
+  main section h2{
+    font-size: 26px;
+  }
+  main section .border-bottom{
+      border-bottom: 3px #00501f solid;
+      width: 100px;
+      margin: 20px auto;
+  }
+  .news-container .news-card{
+    max-width: 414px;
+    height: 672px;
+    box-shadow: 0px 3px 7px rgba(0,0,0,0.35);
+    margin-bottom: 45px;
+  }
+  .instagram-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .instagram-text p{
+    margin-left: 0px;
+  }
+  .slider__wrapper {
+  }
+  .slider__item {
+    height: 254px;
+    max-width: 264px;
+    
+    border: none;
+    transition: 0ms;
+  }
+  .slider__item img{
+    height: 254px;
+    margin: 0px 5px;
+  }
+  .slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 60px;
+    transition: 0.6s ease;
+  }
+  
+  .slider__control:hover,
+  .slider__control:focus {
+    color: #00501f;
+    text-decoration: none;
+  }
+  
+  .slider__control_left {
+    left: 15px;
+  }
+  
+  .slider__control_right {
+    right: 15px;
+  }
+  .calendar{
+    max-width: 330px;
+    margin: 0px auto 75px auto;
+  }
+  .calendar .block{
+    padding: 35px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .calendar .block .circle{
+    width: 162px;
+    height: 162px;
+    border-radius:50%;
+  }
+  .calendar .block .date{
+    margin-top: 40px;
+  }
+  .calendar .block .description{
+    width:400px;
+    margin-top: 26px;
+  }
+  .calendar .block .join{
+    margin-top: 54px;
   }
 }
