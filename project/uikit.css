@@ -302,6 +302,11 @@ main section .double-container .row .block h2{
 .invert-color{
   filter: invert(1);
 }
+
+.location{
+  color:#00501f;
+  border: none;
+}
 .comments{
 
 }
@@ -629,27 +634,37 @@ main section .double-container .row .block h2{
   max-width: 1280px;
   margin: 0px auto 75px auto;
 }
+.calendar i{
+  font-size: 22px;
+}
 .calendar .block{
   padding: 35px 0px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 .calendar .block .circle{
   width: 162px;
   height: 162px;
   border-radius:50%;
 }
-.calendar .block .date{
-  margin-top: 40px;
+.calendar .block .calendar-content{
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.calendar .block .description{
-  width:400px;
-  margin-top: 26px;
+.calendar .block .calendar-content .content-name{
+  width:306px;
+}
+.calendar .block .calendar-content .content-description{
+  width:414px;
 }
 .calendar .block .join{
-  margin-top: 54px;
+  margin-top: 25px;
 }
 @-webkit-keyframes fade{
     from{opacity: .4;}
@@ -843,6 +858,9 @@ main section .double-container .row .block h2{
   main section h2{
     font-size: 26px;
   }
+  main section h3{
+    font-size: 20px;
+  }
   main section .border-bottom{
       border-bottom: 3px #00501f solid;
       width: 100px;
@@ -911,26 +929,43 @@ main section .double-container .row .block h2{
     max-width: 330px;
     margin: 0px auto 75px auto;
   }
+  .calendar i{
+    font-size: 22px;
+  }
   .calendar .block{
     padding: 35px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+  .calendar .block .circle{
+    width: 84px;
+    height: 84px;
+    border-radius:50%;
+  }
+  .calendar .block .calendar-content{
+    max-width: 226px;
+    padding: 0;
+    padding-left: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .calendar .block .circle{
-    width: 162px;
-    height: 162px;
-    border-radius:50%;
+  .calendar .block .calendar-content .content-name{
+    width:226px;
   }
-  .calendar .block .date{
-    margin-top: 40px;
-  }
-  .calendar .block .description{
-    width:400px;
-    margin-top: 26px;
+  .calendar .block .calendar-content .content-description{
+    width:226px;
   }
   .calendar .block .join{
-    margin-top: 54px;
+    margin-top: 25px;
+  }
+  main .green {
+    padding-top: 50px;
+  }
+  .margin-top{
+    margin-top: 75px;
   }
 }

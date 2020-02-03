@@ -202,6 +202,12 @@ main section .questions-donate-block .donate{
     main section .icon-1{
         height: 45px;
     }
+    main section .icon-7{
+        height: 50px;
+    }
+    main section .icon-8{
+        height: 50px;
+    } 
     /* main section .icon-4{
         height: 68px;
     }
@@ -210,13 +216,7 @@ main section .questions-donate-block .donate{
     }
     main section .icon-6{
         height: 32px;
-    }
-    main section .icon-7{
-        height: 80px;
-    }
-    main section .icon-8{
-        height: 70px;
-    } */
+    }*/
     main section .double-block{
         max-width: 1280px;
         margin: 50px auto 0px auto;
@@ -263,7 +263,66 @@ main section .questions-donate-block .donate{
     main section .monuments-block .content .button{
         margin-top: 65px;
     }
-   
+    main section .how-to{
+        margin-top: 0;
+    }
+    main section .how-to .block{
+        margin: 0 auto;
+    }
+    main section .how-to .block p{
+        margin-bottom: 40px;
+    }
+    .how-to .block h3{
+        text-align: left;
+    }
+    main section .family-block{
+        max-width:330px;
+        margin: 10px auto 0px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main section .family-block .block{
+        max-width: 330px;
+    }
+    main section .family-block .text{
+        max-width: 330px;
+        padding-left: 0px;
+    }
+    main section .family-block .block img{
+        width: 100%;
+    }
+    main section .family-block .block .family-link{
+        margin-top: 120px;
+    }
+    main section .family-block .block h4{
+        margin-bottom: 26px;
+    }
+    main section .questions-donate-block{
+        max-width:1280px;
+        margin: 80px auto 0px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main section .questions-donate-block .block{
+        max-width: 640px;
+        height: 700px;
+        padding-top: 30px;
+    }
+    main section .questions-donate-block .block h1{
+        text-align: left;
+    }
+    main section .questions-donate-block .block .button{
+        margin-top: 90px;
+    }
+    main section .questions-donate-block .donate{
+        max-width: 550px;
+        padding-left: 90px;
+        background-image: url(img/donate.jpg);
+    }
 }
 
 @media screen and (min-width: 1440px){
