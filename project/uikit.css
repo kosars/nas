@@ -114,6 +114,15 @@ nav {
   font-family: "OpenSans-Regular";
   background: #00501f;
 }
+.page-pretext{
+  max-width: 975px;
+  text-align: left;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+.page-pretext h1{
+  text-align: left;
+}
 .button {
   color: #fff;
   background: #00501f;
@@ -674,6 +683,31 @@ main section .double-container .row .block h2{
 .calendar .block .join{
   margin-top: 25px;
 }
+main .monument-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 740px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.monument-container .monument-img{
+  max-width: 36%;
+}
+.monument-container .monument-img img{
+  width: 100%;
+  height: 740px;
+  object-fit: cover;
+}
+.monument-container .monument-text{
+  max-width: 64%;
+  padding:90px 80px;
+}
+.monument-container .monument-text .button{
+  margin-top: auto;
+  margin-bottom: 0px;
+}
 @-webkit-keyframes fade{
     from{opacity: .4;}
     to{opacity: 1;}
@@ -873,9 +907,9 @@ main section .double-container .row .block h2{
     font-size: 20px;
   }
   main section .border-bottom{
-      border-bottom: 3px #00501f solid;
-      width: 100px;
-      margin: 20px auto;
+    border-bottom: 3px #00501f solid;
+    width: 100px;
+    margin: 20px auto;
   }
   .news-container .news-card{
     max-width: 414px;
